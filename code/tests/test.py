@@ -1,10 +1,7 @@
 from src.capitalize import capitalize
 
-if capitalize('text') != 'Text':
-    print("Ошибка!")
+assert capitalize('text') == 'Text', 'Error'
 
-
-if capitalize('') != '':
-    print('Error')
+assert capitalize('') == '', 'Error'
 
 print('Все тесты прошли!')           
